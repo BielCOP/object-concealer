@@ -35,7 +35,7 @@ Citizen.CreateThread(function()
 		Citizen.Wait(1000)
 
 		if NetworkIsSessionStarted() then
-			TriggerServerEvent('server:loadObjectsToPlayer')
+			TriggerServerEvent('server:loadObjectsForPlayer')
 			break
 		end
 	end

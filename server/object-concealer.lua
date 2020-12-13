@@ -1,6 +1,6 @@
 RegisterServerEvent('server:createObject')
 RegisterServerEvent('server:loadObjects')
-RegisterServerEvent('server:loadObjectsToPlayer')
+RegisterServerEvent('server:loadObjectsForPlayer')
 
 -- [[ Variáveis ]]
 
@@ -37,7 +37,7 @@ AddEventHandler('server:loadObjects', function()
 	end
 end)
 
-AddEventHandler('server:loadObjectsToPlayer', function()
+AddEventHandler('server:loadObjectsForPlayer', function()
 	local src = source
 
 	for k, v in pairs(objectData) do
