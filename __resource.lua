@@ -1,5 +1,5 @@
 description 'Object Concealer'
 version '0.1'
 
-server_script 'object-concealer.lua'
-client_script 'object-concealer.lua'
+server_script 'server/object-concealer.lua'
+client_script 'client/object-concealer.lua'

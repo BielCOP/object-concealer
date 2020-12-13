@@ -32,7 +32,7 @@ AddEventHandler('server:loadObjects', function()
 				coords = vector4(obj.coords.x, obj.coords.y, obj.coords.z, obj.coords.w),
 				time = obj.time
 			})
-			print('[' .. Project .. ']' .. #objectData .. ' carregado com sucesso!')
+			print('[' .. Project .. '] ' .. #objectData .. ' carregado com sucesso!')
 		end
 	end
 end)
