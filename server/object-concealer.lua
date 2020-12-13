@@ -58,6 +58,7 @@ Citizen.CreateThread(function()
 				TriggerClientEvent('client:deleteObject', -1, v.model, v.coords, 1.0) -- Chamado para todos os players
 
 				objectData[k] = nil
+				break
 			end
 		end
 
