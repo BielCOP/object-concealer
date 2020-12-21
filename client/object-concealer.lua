@@ -7,9 +7,9 @@ RegisterNetEvent('client:loadObject')
 AddEventHandler('client:createObject', function(model, coords) -- vector4 coords
 	local object = CreateObject(GetHashKey(model), coords.x, coords.y, coords.z, false, true, true)
 
-	PlaceObjectOnGroundProperly(object)
-
 	SetEntityHeading(object, coords.w)
+
+	PlaceObjectOnGroundProperly(object)
 end)
 
 AddEventHandler('client:deleteObject', function(model, coords, radius) -- only vector3 coords
@@ -23,9 +23,9 @@ end)
 AddEventHandler('client:loadObject', function(model, coords) -- vector4 coords
 	local object = CreateObject(GetHashKey(model), coords.x, coords.y, coords.z, false, true, true)
 
-	PlaceObjectOnGroundProperly(object)
-
 	SetEntityHeading(object, coords.w)
+
+	PlaceObjectOnGroundProperly(object)
 end)
 
 -- [[ Threads ]]
