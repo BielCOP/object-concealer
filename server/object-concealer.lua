@@ -32,8 +32,11 @@ AddEventHandler('server:loadObjects', function()
 				coords = vector4(obj.coords.x, obj.coords.y, obj.coords.z, obj.coords.w),
 				time = obj.time
 			})
+
 			print('[' .. Project .. '] Objeto ' .. #objectData .. ' carregado com sucesso!')
 		end
+
+		f:close()
 	end
 end)
 
@@ -57,8 +60,8 @@ Citizen.CreateThread(function()
 			if v.time < os.time() then
 				TriggerClientEvent('client:deleteObject', -1, v.model, v.coords, 1.0) -- Chamado para todos os players
 
-				objectData[k] = nil
-				break
+				k = nil
+				-- break
 			end
 		end
 
